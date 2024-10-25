@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729896285
+::res://::1729897345
 icon.svg::CompressedTexture2D::1946822428333676246::1729874316::1729874401::1::::<><>::
 label.gd::GDScript::-1::1729874316::0::1::::<>Label<>::
 label_2.gd::GDScript::-1::1729874316::0::1::::<>Label<>::
 label_3.gd::GDScript::-1::1729874316::0::1::::<>Label<>::
-screens.tscn::PackedScene::6156206869978122624::1729874316::0::1::::<><>::res://type_input.gd<>res://type_output.gd<>res://label.gd<>res://label_2.gd<>res://label_3.gd
+screens.tscn::PackedScene::6156206869978122624::1729897318::0::1::::<><>::res://type_input.gd<>res://type_output.gd<>res://label.gd<>res://label_2.gd<>res://label_3.gd
 type_input.gd::GDScript::-1::1729874316::0::1::::<>LineEdit<>::
 type_output.gd::GDScript::-1::1729874316::0::1::::<>LineEdit<>::
