@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://ctyd3e3r74eom"]
+
+[ext_resource type="Script" path="res://type_input.gd" id="1_n5egp"]
+[ext_resource type="Script" path="res://type_output.gd" id="2_1iedu"]
+[ext_resource type="Script" path="res://label.gd" id="3_jluio"]
+[ext_resource type="Script" path="res://label_2.gd" id="4_c6yi8"]
+[ext_resource type="Script" path="res://label_3.gd" id="5_ha3fw"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TypeInput" type="LineEdit" parent="."]
+layout_mode = 0
+offset_top = 616.0
+offset_right = 320.0
+offset_bottom = 647.0
+script = ExtResource("1_n5egp")
+
+[node name="TypeOutput" type="LineEdit" parent="TypeInput"]
+visible = false
+layout_mode = 0
+offset_top = -32.0
+offset_right = 320.0
+offset_bottom = -1.0
+editable = false
+script = ExtResource("2_1iedu")
+
+[node name="Label" type="Label" parent="TypeInput"]
+layout_mode = 0
+offset_top = -64.0
+offset_right = 320.0
+offset_bottom = -1.0
+script = ExtResource("3_jluio")
+
+[node name="Label2" type="Label" parent="TypeInput/Label"]
+layout_mode = 0
+offset_top = -64.0
+offset_right = 320.0
+offset_bottom = -1.0
+script = ExtResource("4_c6yi8")
+
+[node name="Label3" type="Label" parent="TypeInput/Label/Label2"]
+layout_mode = 0
+offset_top = -64.0
+offset_right = 320.0
+offset_bottom = -1.0
+script = ExtResource("5_ha3fw")
+
+[node name="TextEdit" type="TextEdit" parent="TypeInput"]
+visible = false
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="CodeEdit" type="CodeEdit" parent="TypeInput"]
+visible = false
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="text_submitted" from="TypeInput" to="TypeInput" method="_on_text_submitted"]
+[connection signal="text_submitted" from="TypeInput" to="TypeInput/Label" method="_on_type_input_text_submitted"]
+[connection signal="passdown" from="TypeInput/Label" to="TypeInput/Label/Label2" method="_on_label_passdown"]
+[connection signal="passdown_2" from="TypeInput/Label/Label2" to="TypeInput/Label/Label2/Label3" method="_on_label_2_passdown_2"]
