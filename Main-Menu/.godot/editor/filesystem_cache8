@@ -1,0 +1,11 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1730477134
+button.gd::GDScript::-1::1729874316::0::1::::<>Button<>::
+icon.svg::CompressedTexture2D::6272954769159465031::1729874316::1730477135::1::::<><>::
+menu.gd::GDScript::-1::1729874316::0::1::::<>Control<>::
+menu.tscn::PackedScene::1501036668464110122::1729874316::0::1::::<><>::res://menu.gd
+node_2d.tscn::PackedScene::4485058058384346945::1729874316::0::1::::<><>::
+optionmenu.gd::GDScript::-1::1729874316::0::1::::<>Control<>::
+Optionmenu.tscn::PackedScene::7711200726762550078::1729874316::0::1::::<><>::res://optionmenu.gd
+pixil-frame-0 (1).png::CompressedTexture2D::3029042710794197845::1729874316::1730477135::1::::<><>::
+ui.tscn::PackedScene::3626187471775139653::1729897982::0::1::::<><>::uid://bjfj5j44haalp::::res://pixil-frame-0 (1).png
