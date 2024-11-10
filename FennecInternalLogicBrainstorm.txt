@@ -9,9 +9,11 @@ Variables:
 	Player Controlled Variables:
 		NumTabs, the number of tabs/programs open on your terminal
 		Throttle
+		AirCon (like the fan from FNAF)
 	Misc:
 		Balancing constant C (differs per use)
 Interactions:
 	Internal:
 		Per Second, O2 = O2 - C(Hull Damage) - C + Functional O2 Generators
-		Per Second, Heat = Heat + C(NumTabs) + C(Throttle)
+		Per Second, Heat = Heat + C(NumTabs) + C(Throttle) - C(AirCon)
+		Per Second, Coolant = Coolant - C(AirCon)
