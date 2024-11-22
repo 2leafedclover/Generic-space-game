@@ -1,9 +1,28 @@
-[gd_scene load_steps=5 format=3 uid="uid://ctyd3e3r74eom"]
+[gd_scene load_steps=12 format=3 uid="uid://ctyd3e3r74eom"]
 
+[ext_resource type="FontVariation" uid="uid://b4yoa0xf8oe0e" path="res://game_font1.tres" id="1_24lo2"]
 [ext_resource type="Script" path="res://type_input.gd" id="1_n5egp"]
 [ext_resource type="Script" path="res://label.gd" id="3_jluio"]
 [ext_resource type="Script" path="res://label_2.gd" id="4_c6yi8"]
 [ext_resource type="Script" path="res://label_3.gd" id="5_ha3fw"]
+
+[sub_resource type="Theme" id="Theme_prwgo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ggk2p"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2bmax"]
+bg_color = Color(0, 0, 0, 1)
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_32gw1"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_llskp"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oeg8t"]
+bg_color = Color(0, 0, 0, 1)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -15,30 +34,46 @@ grow_vertical = 2
 
 [node name="TypeInput" type="LineEdit" parent="."]
 layout_mode = 0
-offset_top = 616.0
+offset_top = 617.0
 offset_right = 320.0
-offset_bottom = 647.0
+offset_bottom = 648.0
+theme = SubResource("Theme_prwgo")
+theme_override_colors/caret_color = Color(0, 1, 0, 1)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("1_24lo2")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ggk2p")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2bmax")
+caret_blink = true
 script = ExtResource("1_n5egp")
 
 [node name="Label USE FOR FUNCS" type="Label" parent="TypeInput"]
 layout_mode = 0
-offset_top = -64.0
+offset_top = -62.0
 offset_right = 320.0
-offset_bottom = -1.0
+offset_bottom = 1.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("1_24lo2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_32gw1")
 script = ExtResource("3_jluio")
 
 [node name="Label2" type="Label" parent="TypeInput/Label USE FOR FUNCS"]
 layout_mode = 0
-offset_top = -64.0
+offset_top = -61.0
 offset_right = 320.0
-offset_bottom = -1.0
+offset_bottom = 2.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("1_24lo2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_llskp")
 script = ExtResource("4_c6yi8")
 
 [node name="Label3" type="Label" parent="TypeInput/Label USE FOR FUNCS/Label2"]
 layout_mode = 0
-offset_top = -64.0
+offset_top = -61.0
 offset_right = 320.0
-offset_bottom = -1.0
+offset_bottom = 2.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("1_24lo2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_oeg8t")
 script = ExtResource("5_ha3fw")
 
 [connection signal="text_submitted" from="TypeInput" to="TypeInput" method="_on_text_submitted"]

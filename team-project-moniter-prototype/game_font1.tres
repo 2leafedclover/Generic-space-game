@@ -1,0 +1,6 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://b4yoa0xf8oe0e"]
+
+[ext_resource type="FontFile" uid="uid://ce7m4vaiaw7lo" path="res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/connection_ii/ConnectionII.otf" id="1_lbxbb"]
+
+[resource]
+base_font = ExtResource("1_lbxbb")
